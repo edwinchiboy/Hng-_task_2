@@ -4,13 +4,17 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+http://github.com - automatic!
+[GitHub](http://github.com)
 
-A few resources to get you started if this is your first Flutter project:
+https://i4g.zuriboard.com - automatic!
+[Zuri](https://i4g.zuriboard.com)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+https://hng.tech - automatic!
+[Zuri](https://hng.tech)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![zuri-i4g](https://user-images.githubusercontent.com/33594875/130140417-647959ac-c870-4939-bd60-c71f0a35cbcf.png)
+
+![HNG-logo](https://user-images.githubusercontent.com/33594875/130140333-d1416da9-0cd2-4f41-9841-c6db38792aea.png)
+
+
