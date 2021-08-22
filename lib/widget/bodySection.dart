@@ -5,25 +5,25 @@ class BodySection extends StatelessWidget {
   final enteredName;
   final enteredStack;
   final enteredAddress;
-  final enteredAboutCareer;
-  final enteredFacebook;
-  final enteredPhoneNo;
+  final enteredCareerInfo;
   final enteredSkill1;
   final enteredSkill2;
   final enteredSkill3;
   final enteredSkill4;
+  final enteredlinkedLnLink;
+  final enteredGitHubLink;
 
   BodySection({
     required this.enteredName,
     required this.enteredStack,
     required this.enteredAddress,
-    required this.enteredAboutCareer,
-    required this.enteredFacebook,
-    required this.enteredPhoneNo,
+    required this.enteredCareerInfo,
     required this.enteredSkill1,
     required this.enteredSkill2,
     required this.enteredSkill3,
     required this.enteredSkill4,
+    required this.enteredlinkedLnLink,
+    required this.enteredGitHubLink,
   });
 
   @override
@@ -42,7 +42,7 @@ class BodySection extends StatelessWidget {
                   Expanded(
                     flex: 9,
                     child: Container(
-                      padding: EdgeInsets.all(5),
+                      padding: EdgeInsets.fromLTRB(10, 5, 5, 5),
                       child: ListView(
                         children: [
                           Container(
@@ -84,8 +84,10 @@ class BodySection extends StatelessWidget {
                                         Row(
                                           children: [
                                             IconButton(
+                                              constraints: BoxConstraints(),
+                                              padding: EdgeInsets.zero,
                                               icon: Icon(
-                                                Icons.location_history,
+                                                Icons.fmd_good_outlined,
                                                 color: Colors.pink,
                                                 size: 24.0,
                                               ),
@@ -101,7 +103,7 @@ class BodySection extends StatelessWidget {
                               )),
                           Container(
                             padding: EdgeInsets.only(top: 40),
-                            child: Text(enteredAboutCareer),
+                            child: Text(enteredCareerInfo),
                           ),
                           Container(
                               padding: EdgeInsets.only(top: 40),
@@ -144,55 +146,44 @@ class BodySection extends StatelessWidget {
                                   Container(
                                     child: Row(
                                       mainAxisAlignment:
-                                          MainAxisAlignment.spaceEvenly,
+                                          MainAxisAlignment.spaceAround,
                                       children: [
-                                        Container(
-                                          padding: EdgeInsets.symmetric(
-                                              vertical: 5, horizontal: 0),
-                                          child: Row(
+                                        InkWell(
+                                          onTap: () {},
+                                          child: Column(
                                             mainAxisAlignment:
-                                                MainAxisAlignment.start,
+                                                MainAxisAlignment.center,
                                             children: [
-                                              Column(
-                                                children: [
-                                                  IconButton(
-                                                    icon: Icon(
-                                                      Icons.contact_page,
-                                                      color: Colors.blue,
-                                                      size: 24.0,
-                                                    ),
-                                                    onPressed: () => {},
-                                                  ),
-                                                  Text('facebook')
-                                                ],
+                                              Container(
+                                                child: Image.asset(
+                                                  'assets/images/linkeln.png',
+                                                  fit: BoxFit.cover,
+                                                ),
+                                                width: 25,
+                                                height: 25,
                                               ),
-                                              Text(enteredFacebook),
+                                              Text(enteredlinkedLnLink),
                                             ],
                                           ),
                                         ),
-                                        
-                                        Container(
-                                          child: Row(
+                                        InkWell(
+                                          onTap: () {},
+                                          child: Column(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.start,
                                             children: [
-                                              Column(
-                                                children: [
-                                                  IconButton(
-                                                    icon: Icon(
-                                                      Icons.contact_page,
-                                                      color: Colors.blue,
-                                                      size: 24.0,
-                                                    ),
-                                                    onPressed: () => {},
-                                                  ),
-                                                  Text('Tweeter')
-                                                ],
+                                              Container(
+                                                child: Image.asset(
+                                                  'assets/images/github.png',
+                                                  fit: BoxFit.cover,
+                                                ),
+                                                width: 25,
+                                                height: 25
                                               ),
-                                              Text(enteredPhoneNo),
+                                              Text(enteredGitHubLink),
                                             ],
                                           ),
-                                        )
+                                        ),
                                       ],
                                     ),
                                   )
